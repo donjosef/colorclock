@@ -1,4 +1,13 @@
- 
+const current_col = document.querySelector('.current-color');
+
+ function changeColor(h, m, s) {
+    var red = Math.round(255 * ( h/23 ));
+    var green = Math.round(255 * ( m/59 ));
+    var blue = Math.round(255 * ( s/59 ));
+
+    document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+ }
+
 function leadingZero(val) {
     return val < 10 ? '0' + val : val;
 }
@@ -16,4 +25,5 @@ setInterval(function() {
         min_span.innerHTML =  leadingZero(mins) + ":";
         sec_span.innerHTML = leadingZero(secs);        
        
+    changeColor(hours, mins, secs)
     },1000);
