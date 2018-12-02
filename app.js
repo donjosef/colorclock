@@ -6,6 +6,7 @@ const current_col = document.querySelector('.current-color');
     var blue = Math.round(255 * ( s/59 ));
 
     document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+    current_col.innerHTML = `rgb(${red}, ${green}, ${blue})`;
  }
 
 function leadingZero(val) {
@@ -26,4 +27,4 @@ setInterval(function() {
         sec_span.innerHTML = leadingZero(secs);        
        
     changeColor(hours, mins, secs)
-    },1000);
+},1000);
