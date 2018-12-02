@@ -1,0 +1,21 @@
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-shadow: -2px 2px 1px rgba(0,0,0,0.8);
+}
+        
+.clock, .color {
+    text-align: center;
+    font-size: 2.9em;
+}
+
+.current-time, .current-color {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
