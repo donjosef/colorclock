@@ -19,3 +19,12 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 750px) {
+    body {
+        font-size: 0.64em;
+    }
+    .container {
+        width: 98%;
+    }
+}
